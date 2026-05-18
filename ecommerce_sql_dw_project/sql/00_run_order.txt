@@ -1,0 +1,11 @@
+建议执行顺序：
+
+1. python scripts/generate_mock_data.py
+2. source sql/01_create_database.sql;
+3. source sql/02_create_tables.sql;
+4. 修改并执行 sql/03_load_data_template.sql
+5. source sql/04_etl_dwd.sql;
+6. source sql/05_etl_dws.sql;
+7. source sql/06_ads_reports.sql;
+8. source sql/07_analysis_queries.sql;
+9. source sql/08_index_explain.sql;
